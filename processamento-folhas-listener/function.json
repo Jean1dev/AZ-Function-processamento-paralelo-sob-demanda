@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "name": "mySbMsg",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "processamento-folhas",
+      "connection": "brokermensageria_SERVICEBUS"
+    }
+  ],
+  "scriptFile": "../dist/processamento-folhas-listener/index.js"
+}
