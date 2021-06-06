@@ -2,8 +2,8 @@ import { AzureFunction, Context } from "@azure/functions"
 import { IFolha } from '../@types/types'
 import { CosmosClient } from '@azure/cosmos'
 
-const COSMOS_URL = 'https://cosmos-db-jean.documents.azure.com:443/'
-const COSMOS_KEY = 'te6NrywJWGN6wAXQPl0DVZUns1fLZ23Vy5orVnTHTd3mD2pzaFcJhKbwPFuTEk5zk16hPMoHDMNP6U1siK4tUQ=='
+const COSMOS_URL = ''
+const COSMOS_KEY = '=='
 const DATABASE_ID = 'mydb'
 
 const serviceBusQueueTrigger: AzureFunction = async function(context: Context, message: IFolha): Promise<void> {

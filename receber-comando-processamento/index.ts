@@ -2,7 +2,7 @@ import { AzureFunction, Context, HttpRequest } from "@azure/functions"
 import { ServiceBusClient } from '@azure/service-bus'
 import * as faker from 'faker'
 
-const SERVICE_BUS_CONNECTION = 'Endpoint=sb://broker-mensageria.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=NF9870PIhPdwLIZaXCCjyXBUrO/ZvCvv3KilILe378w='
+const SERVICE_BUS_CONNECTION = ''
 const QUEUE_NAME = 'processamento-folhas'
 
 const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
